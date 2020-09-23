@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/til_username"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_above="@id/button_register"
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register" />
+
+</RelativeLayout>
